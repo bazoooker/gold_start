@@ -4,22 +4,250 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>HTML5 basic template</title>
+  <title>title</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='css/main.css' />
   <script src='js/script.js'></script>
 </head>
 
-<body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<body class="body">
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  
+  <!-- ========== header begin ========== -->
 
-        <div class="test">
-          fjdifj dfjsdijgh fjdsgihjao;iphg djfi
+  <div id="header">
+    <div class="container">
+
+      <div class="tile tile-3">
+        <a href="#" class="logo"></a>
+      </div>
+
+      <div class="tile tile-9">
+        <div class="info"> <!-- верхняя полоска хедера -->
+
+          <div class="info-links info-links_horizontal">
+            <ul>
+              <li><a href="#" class="info-link_timetable">расписание</a></li>
+              <li><a href="#" class="info-link_news">новости и акции</a></li>
+            </ul>
+          </div>
+
+          <div class="info-contacts info-contacts_horizontal">        
+            <span class="info-contacts__location">
+              <i class="icon icon_location"></i>
+              г. Барнаул, Павловский тракт, 18В, ТРЦ "Арена"
+            </span>
+            <a class="info-contacts__phone">
+              <span class="phone-code">(3852)</span>
+              59 00 59
+            </a>
+          </div>
+
+        </div> <!-- верхняя полоска хедера конец -->
+
+        <div class="menu"> <!-- нижняя полоска хедера -->
+
+          <ul class="main-menu main-menu_horizontal">
+            <li>клуб</li>
+            <li>фитнес</li>
+            <li>spa</li>
+            <li>клубные карты</li>
+            <li>контакты</li>
+          </ul>
+          
+          <a href="#" class="btn btn_main-color">попробовать премиум-фитнес</a>
+            
+        </div> <!-- нижняя полоска хедера конец --> 
+      </div>             
+
+    </div>    
+  </div>
+
+  <!-- ========== header end ========== -->
+
+
+
+
+
+
+<!-- ========== hero slider begin ========== -->
+
+<div class="hero-slider-holder">
+  <div class="container">
+  <div class="hero-text">
+    <p>Зона функционального тренинга</p>
+    <p>Зона функционального тренинга с новой силовой станцией NAUTILUS обеспечивает разнообразие тренировок</p>
+  </div>
+  <div class="hero-text__controls">
+    <button></button>
+    <button></button>
+  </div>    
+  </div>
+</div>
+
+<!-- ========== hero slider end ========== -->
+
+
+<!-- ========== text section begin ========== -->
+
+<div class="text-section">
+  <div class="container row">
+
+    <div class="tile tile-6"> <!-- левая колонка секции -->
+      <h2>Заголовок</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veniam deleniti, itaque obcaecati nulla quasi debitis quibusdam pariatur perferendis.</p>
+    </div> <!-- левая колонка секции конец -->
+
+    <div class="news tile tile-6"> <!-- правая колонка секции -->
+
+      <div class="row">
+        <h2>Заголовок</h2>
+        
+        <!-- новости однотипные, важной добавляется отдельный класс -->
+        <div class="news-item news-item_important tile tile-6">
+          <p class="news-item__teaser">Переносится на час вперед</p>
+          <p class="news-item__type">
+            изменения в расписании
+            <i class="icon icon_attention"></i> <!-- это будет через after -->
+          </p>
         </div>
-      <h1>  fuck you!</h1>
+
+        <div class="tile tile-6">
+          <p class="news-item__teaser">Переносится на час вперед</p>
+          <p class="news-item__type">
+            изменения в расписании
+            <i class="icon icon_attention"></i>
+          </p>
+        </div>  
+
+      </div>      
+          
+    </div> <!-- правая колонка секции конец -->   
+
+  </div>
+</div>
+
+<!-- ========== text section end ========== -->
+
+<!-- ========== features begin ========== -->
+
+<div class="features">
+  <div class="container">
+    <div class="row">
+      <a href="#" class="tile tile-6 features__tile">
+        <span>персональные тренировки</span>
+      </a>
+      <a href="#" class="tile tile-3 features__tile">
+        <span>персональные тренировки</span>
+      </a>
+      <a href="#" class="tile tile-3 features__tile">
+        <span>персональные тренировки</span>
+      </a>
+      <a href="#" class="tile tile-3 features__tile">
+        <span>персональные тренировки</span>
+      </a>
+      <a href="#" class="tile tile-6 features__tile">
+        <span>персональные тренировки</span>
+      </a>
+      <a href="#" class="tile tile-3 features__tile">
+        <span>персональные тренировки</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== features end ========== -->
+
+
+<!-- ========== text section begin ========== -->
+
+<div class="text-section">
+  <div class="container row">
+    
+
+    <div class="tile tile-6"> <!-- левая колонка секции -->
+      <h2>клубные карты</h2>
+
+      <div class="row">
+        <div class="tile tile-6">
+          <p><strong>Клубная карта Gold Start- это Ваш пропуск в мир фитнеса мечты</strong></p>  
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veniam deleniti, itaque obcaecati nulla quasi debitis quibusdam pariatur perferendis.</p>
+          <a href="#" class="btn btn_main">Выбрать карту</a>
+        </div>
+
+        <div class="tile tile-6">
+          <p><strong>Клубная карта Gold Start- это Ваш пропуск в мир фитнеса мечты</strong></p>  
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veniam deleniti, itaque obcaecati nulla quasi debitis quibusdam pariatur perferendis.</p>
+          <a href="#" class="btn btn_main">Попробовать</a> 
+        </div>  
+
+      </div>
+    </div> <!-- левая колонка секции конец -->
+
+    <div class="tile tile-6"> <!-- правая колонка секции -->
+      <div class="row">
+      <img src="/img/cards/card1.png" alt="">
+                    
+    </div> <!-- правая колонка секции конец -->   
+
+  </div>
+</div>
+
+<!-- ========== text section end ========== -->
+
+
+<!-- ========== footer begin ========== -->
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col col-3">
+        <a href="#" class="logo"></a>  
+      </div>
+
+      <div class="col col-3">
+        <div class="info-links info-links_vertical">
+          <ul>
+            <li><a href="#" class="info-link_timetable">расписание</a></li>
+            <li><a href="#" class="info-link_news">новости и акции</a></li>
+          </ul>
+        </div>  
+      </div>
+
+      <div class="col col-3">
+        <ul class="main-menu main-menu_vertical">
+          <li>клуб</li>
+          <li>фитнес</li>
+          <li>spa</li>
+          <li>клубные карты</li>
+          <li>контакты</li>
+        </ul>  
+      </div>
+
+      <div class="col col-3">
+        <div class="info-contacts info-contacts_vertical">       
+          <span class="info-contacts__location">
+            <i class="icon icon_location"></i>
+            г. Барнаул, Павловский тракт, 18В, ТРЦ "Арена"
+          </span>
+          <a class="info-contacts__phone">
+            <span class="phone-code">(3852)</span>
+            59 00 59
+          </a>
+        </div>
+        <a href="#" class="btn btn_main-color">попробовать премиум-фитнес</a>  
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== footer end ========== -->
+        
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 

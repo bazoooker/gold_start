@@ -1,0 +1,45 @@
+/* ====== header begin ====== */
+
+#header {
+	display: block;
+	min-height: 152px;
+	background-image: url(/img/bg/bg-header.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* ====== header end ====== */
+
+/* ====== info begin ====== */
+
+.info {
+	.info-links {
+		float: left;		
+		/*elements*/
+		ul li {
+			list-style: none;
+			float: left;
+			margin-right: 20px;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+		}
+		/*modificators*/
+		/*states*/	
+	}
+
+	.info-links {		
+		/*elements*/
+		/*modificators*/
+		/*states*/	
+	}
+}
+
+	
+
+
+
+/* ====== info end ====== */

@@ -1,7 +1,16 @@
 @import "base/reset";
 @import "base/scale";
+
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
-@import "block/buttons";
 
-
+@import "block/grid";
+@import "block/buttons-links";
+@import "block/header-footer";
+@import "block/hero-slider";
+@import "block/hero-text";
+@import "block/lead";
+@import "block/tile";
+@import "block/cards";
+@import "block/feature-section";
+@import "block/feature-column";
