@@ -1,4 +1,4 @@
-/*====== header begin ====== */
+/*====== header-footer begin ====== */
 
 #header {
 	display: block;
@@ -9,12 +9,14 @@
 	background-size: cover;
 }
 
-/* ====== header end ====== */
-
-/* ====== info begin ====== */
-
-.info {
+.info_header {
 	margin-top: 50px;
+}
+.info_footer {
+	margin-top: 74px;
+}
+
+.info {	
 
 	.info-links {
 		float: left;
@@ -38,6 +40,15 @@
 
 		/*modificators*/
 		/*states*/	
+	}
+	.info-links_vertical ul li {
+		display: block;
+		float: none;
+		// line-height: 40px;
+		margin-bottom: 30px;
+	}
+	.info-links_vertical ul li:last-child {
+		margin-left: 32px;
 	}
 
 	.info-contacts {
@@ -63,16 +74,27 @@
 		}
 
 		/*modificators*/
-		/*states*/	
+		/*states*/		
+	}
+	.info-contacts_vertical	{
+
+		.info-contacts__location,
+		.info-contacts__phone {
+			float: right;
+		}
+		.info-contacts__phone {
+			margin-top: 20px;
+		}
 	}
 }
-
-/* ====== info end ====== */
-
-/* ====== menu begin ====== */
-
-.menu {
+.menu_header {
 	margin-top: 24px;
+}
+.menu_footer {
+	margin-top: 74px;
+}
+.menu {
+	
 	// padding: 11px 0;
 	
 	.main-menu li {
@@ -98,10 +120,16 @@
 		}
 	}
 
-	.main-menu_vertical {
-		float: left;
+	.main-menu_vertical li {
+		display: block;
+		float: none;
+
 	}
 	/*states*/	
 }
 
-/* ====== menu end ======*/
+#footer {
+	min-height: 276px;	
+	background-image: url(/img/bg/bg-footer.png);
+}
+

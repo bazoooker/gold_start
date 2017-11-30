@@ -1,4 +1,4 @@
-/* ====== grid ====== */
+/*====== grid ====== */
 
 .container {
   position: relative;
@@ -62,8 +62,7 @@
 
 /*колонки - для создания сетки с отступами между колонок. Крайние элементы - прижаты к бокам контейнера*/
 
-  .col {
-    margin-left: 4%; }
+  .col {  margin-left: 4%; }
   .col:first-child,
   .col:first-child {
     margin-left: 0; }
@@ -73,7 +72,7 @@
   .col-3                { width: 22%;            }
   .col-4                { width: 30.6666666667%; }
   .col-5                { width: 39.3333333333%; }
-  .col-6                { width: 48%;            }
+  .col-6                { width: 46%;            }
   .col-7                { width: 56.6666666667%; }
   .col-8                { width: 65.3333333333%; }
   .col-9                { width: 74.0%;          }
@@ -109,4 +108,15 @@
 .f-left {
   float: left;
 }
+.full-width {
+  width: 100%;
+}
+
+body {
+  background-image: url(/img/bg/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+}
+
 /* ====== grid end ====== */

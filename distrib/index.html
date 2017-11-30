@@ -26,7 +26,7 @@
       </div>
 
       <div class="tile tile-9">
-        <div class="info row"> <!-- верхняя полоска хедера -->
+        <div class="info info_header row"> <!-- верхняя полоска хедера -->
 
           <div class="info-links info-links_horizontal">
             <ul>
@@ -51,7 +51,7 @@
 
         </div> <!-- верхняя полоска хедера конец -->
 
-        <div class="menu row"> <!-- нижняя полоска хедера -->
+        <div class="menu menu_header row"> <!-- нижняя полоска хедера -->
 
           <ul class="main-menu main-menu_horizontal">
             <li><a href="#">клуб</a></li>
@@ -61,7 +61,7 @@
             <li><a href="#">контакты</a></li>
           </ul>
           
-          <a href="#" class="btn btn_main-color f-right">попробовать премиум-фитнес</a>
+          <a href="#" class="btn btn_main-color btn_try f-right">попробовать премиум-фитнес</a>
             
         </div> <!-- нижняя полоска хедера конец --> 
       </div>             
@@ -100,28 +100,29 @@
   <div class="container row">
 
     <div class="tile tile-6"> <!-- левая колонка секции -->
-      <h2>Заголовок</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veniam deleniti, itaque obcaecati nulla quasi debitis quibusdam pariatur perferendis.</p>
+      <h2>Премиум в фитнесе - это GOLD START</h2>
+      <p>Воплощение ваших представлений об идеальном фитнесе - это ультрасовременный клуб площадью 2000 кв.м. Идеально подобранные программы, новейшее оборудование и роскошный термальный комплекс заставят переосмыслить всё, что вы видели до GOLD START.</p>
+      <a class="single-link" href="#">Подробнее о клубе</a>
     </div> <!-- левая колонка секции конец -->
 
     <div class="news tile tile-6"> <!-- правая колонка секции -->
 
       <div class="row">
-        <h2>Заголовок</h2>
+        <h2>новости</h2>
         
         <!-- новости однотипные, важной добавляется отдельный класс -->
-        <div class="news-item news-item_important tile tile-6">
-          <p class="news-item__teaser">Переносится на час вперед</p>
+        <div class="news-item news-item_important col col-6">
+          <p class="news-item__teaser">14.11-15.11: TRX переносится на час вперед.</p>
           <p class="news-item__type">
-            изменения в расписании
+            Изменения в расписании
             <i class="icon icon_attention"></i> <!-- это будет через after -->
           </p>
         </div>
 
-        <div class="tile tile-6">
-          <p class="news-item__teaser">Переносится на час вперед</p>
+        <div class="news-item col col-6">
+          <p class="news-item__teaser">Массаж травяными мешочками в нашем СПА. Попробуйте наслаждение!</p>
           <p class="news-item__type">
-            изменения в расписании
+            Новинка!
             <i class="icon icon_attention"></i>
           </p>
         </div>  
@@ -136,32 +137,31 @@
 <!-- ========== text section end ========== -->
 
 <!-- ========== features begin ========== -->
-
-<div class="features">
-  <div class="container">
-    <div class="row">
-      <a href="#" class="tile tile-6 features__tile">
-        <span>персональные тренировки</span>
-      </a>
-      <a href="#" class="tile tile-3 features__tile">
-        <span>персональные тренировки</span>
-      </a>
-      <a href="#" class="tile tile-3 features__tile">
-        <span>персональные тренировки</span>
-      </a>
-      <a href="#" class="tile tile-3 features__tile">
-        <span>персональные тренировки</span>
-      </a>
-      <a href="#" class="tile tile-6 features__tile">
-        <span>персональные тренировки</span>
-      </a>
-      <a href="#" class="tile tile-3 features__tile">
-        <span>персональные тренировки</span>
-      </a>
-    </div>
+<div class="container">
+  <div class="features">
+    
+        <a style="background-image: url(/img/bg/tile-bg-1.jpg);" href="#" class="features__tile features__tile_span6">
+          <span>персональные тренировки</span>
+        </a>
+        <a style="background-image: url(/img/bg/tile-bg-2.jpg);" href="#" class="features__tile features__tile_span3">
+          <span>ТРЕНАЖЕРНЫЙ ЗАЛ</span>
+        </a>
+        <a style="background-image: url(/img/bg/tile-bg-3.jpg);" href="#" class="features__tile features__tile_span3">
+          <span>ГРУППОВЫЕ ПРОГРАММЫ</span>
+        </a>
+        <a style="background-image: url(/img/bg/tile-bg-4.jpg);" href="#" class="features__tile features__tile_span3">
+          <span>САЙКЛ-СТУДИЯ</span>
+        </a>
+        <a style="background-image: url(/img/bg/tile-bg-5.jpg);" href="#" class="features__tile features__tile_span6">
+          <span>РОСКОШНЫЙ SPA</span>
+        </a>
+        <a style="background-image: url(/img/bg/tile-bg-6.jpg);" href="#" class="features__tile features__tile_span3">
+          <span>СПОРТИВНОЕ ПИТАНИЕ</span>
+        </a>
+      </div>
+    
   </div>
 </div>
-
 <!-- ========== features end ========== -->
 
 
@@ -175,26 +175,26 @@
       <h2>клубные карты</h2>
 
       <div class="row">
-        <div class="tile tile-6">
-          <p><strong>Клубная карта Gold Start- это Ваш пропуск в мир фитнеса мечты</strong></p>  
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veniam deleniti, itaque obcaecati nulla quasi debitis quibusdam pariatur perferendis.</p>
-          <a href="#" class="btn btn_main">Выбрать карту</a>
+        <div class="col col-6">
+          <h6><strong>Клубная карта Gold Start- это Ваш пропуск в мир фитнеса мечты</strong></h6>  
+          <p>Выберите удобный для Вас вариант посещения Gold Start или позвольте помочь нашим менеджерам.</p>
+          <a href="#" class="btn btn_main-color btn_block">Выбрать карту</a>
         </div>
 
-        <div class="tile tile-6">
-          <p><strong>Клубная карта Gold Start- это Ваш пропуск в мир фитнеса мечты</strong></p>  
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veniam deleniti, itaque obcaecati nulla quasi debitis quibusdam pariatur perferendis.</p>
-          <a href="#" class="btn btn_main">Попробовать</a> 
+        <div class="col col-6">
+          <h6><strong>Хотите попробовать премиум-фитнес?</strong></h6> 
+          <p>Отправьте заявку на гостевой визит и мы подарим вам целый день здоровья и удовольствия!</p>
+          <a href="#" class="btn btn_main-color btn_block">Попробовать</a> 
         </div>  
 
       </div>
     </div> <!-- левая колонка секции конец -->
 
-    <div class="tile tile-6"> <!-- правая колонка секции -->
+    <div class="cards tile tile-6"> <!-- правая колонка секции -->
       <div class="row">
-      <img src="/img/cards/card1.png" alt="">
-                    
-    </div> <!-- правая колонка секции конец -->   
+        <img class="full-width" src="/img/cards/cards-all.png" alt="">                     
+      </div> <!-- правая колонка секции конец -->   
+    </div>
 
   </div>
 </div>
@@ -212,26 +212,28 @@
         <a href="#" class="logo"></a>  
       </div>
 
-      <div class="col col-3">
+      <div class="info info_footer col col-3">
         <div class="info-links info-links_vertical">
           <ul>
-            <li><a href="#" class="info-link_timetable">расписание</a></li>
-            <li><a href="#" class="info-link_news">новости и акции</a></li>
-          </ul>
+              <li>              
+                <a href="#" class="info-link_timetable">
+                <i class="icon icon_timetable"></i>расписание</a></li>
+              <li><a href="#" class="info-link_news">новости и акции</a></li>
+            </ul>
         </div>  
       </div>
 
-      <div class="col col-3">
+      <div class="menu menu_footer col col-2">
         <ul class="main-menu main-menu_vertical">
-          <li>клуб</li>
-          <li>фитнес</li>
-          <li>spa</li>
-          <li>клубные карты</li>
-          <li>контакты</li>
+          <li><a href="#">клуб</a></li>
+          <li><a href="#">фитнес</a></li>
+          <li><a href="#">spa</a></li>
+          <li><a href="#">клубные карты</a></li>
+          <li><a href="#">контакты</a></li>
         </ul>  
       </div>
 
-      <div class="col col-3">
+      <div class="info info_footer col col-4">
         <div class="info-contacts info-contacts_vertical">       
           <span class="info-contacts__location">
             <i class="icon icon_location"></i>
@@ -242,7 +244,7 @@
             59 00 59
           </a>
         </div>
-        <a href="#" class="btn btn_main-color">попробовать премиум-фитнес</a>  
+        <a href="#" class="btn btn_main-color btn_block f-right">попробовать премиум-фитнес</a>  
       </div>
 
     </div>

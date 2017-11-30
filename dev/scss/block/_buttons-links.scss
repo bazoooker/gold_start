@@ -14,16 +14,25 @@
 .btn {
 	@include font-900-italic;
 	font-size: 16px;
-	padding: 11px;
+	padding: 9px 15px;
 	text-decoration: none;	
 }
+	.btn_try {
+		font-size: 18px;
+		padding: 8px;
+	}
 
-.btn_main-color {
-	color: #000;
-	background-image: url(/img/bg/btn-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+	.btn_main-color {
+		color: #000;
+		background-image: url(/img/bg/btn-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.btn_block {
+		display: inline-block;
+		margin-top: 30px;
+	}
 
 .icon {
 	float: left;
@@ -44,7 +53,13 @@
     	margin-right: 8px;
     	background-image: url(/img/icons/icon-location.png);
 	}
-
+.single-link {
+	display: inline-block;
+	color: $main-color;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 20px;
+}
 /* ====== button-links end ====== */
 
 

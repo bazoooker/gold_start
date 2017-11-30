@@ -1,10 +1,10 @@
 @import "base/reset";
 @import "base/scale";
-@import "base/fonts";
 
 @import "assets/stylesheets/var";
 @import "assets/stylesheets/mixin";
 
+@import "base/fonts";
 @import "block/grid";
 @import "block/buttons-links";
 @import "block/header-footer";
@@ -15,3 +15,5 @@
 @import "block/cards";
 @import "block/feature-section";
 @import "block/feature-column";
+@import "block/text-section";
+@import "block/news";
