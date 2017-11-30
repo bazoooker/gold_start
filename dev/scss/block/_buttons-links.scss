@@ -3,7 +3,7 @@
 .logo {
 	display: block;
 	width: 149px;
-	height: 112px;
+	height: 152px;
 	margin: 0 auto;
 
 	background-image: url(/img/logo.png);
@@ -11,4 +11,40 @@
 	background-repeat: no-repeat;
 }
 
+.btn {
+	@include font-900-italic;
+	font-size: 16px;
+	padding: 11px;
+	text-decoration: none;	
+}
+
+.btn_main-color {
+	color: #000;
+	background-image: url(/img/bg/btn-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icon {
+	float: left;
+	margin-right: 8px;
+}
+	.icon_timetable {
+		width: 25px;
+    	float: left;
+    	height: 23px;
+    	margin-right: 8px;
+    	background-image: url(/img/icons/icon-calendar.png);
+	}
+
+	.icon_location {
+		width: 10px;
+    	float: left;
+    	height: 14px;
+    	margin-right: 8px;
+    	background-image: url(/img/icons/icon-location.png);
+	}
+
 /* ====== button-links end ====== */
+
+

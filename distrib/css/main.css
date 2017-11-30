@@ -87,6 +87,36 @@ hr {
 input, select {
   vertical-align: middle; }
 
+/* ====== fonts begin ====== */
+@font-face {
+  font-family: 'DIN-Pro-Cond';
+  src: url("/fonts/DINPro/DINPro-CondensedBlackItalic.eot");
+  src: local("DIN Pro Condensed Black Italic"), local("DINPro-CondensedBlackItalic"), url("/fonts/DINPro/DINPro-CondensedBlackItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/DINPro/DINPro-CondensedBlackItalic.woff") format("woff"), url("/fonts/DINPro/DINPro-CondensedBlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'DIN-Pro-Cond';
+  src: url("/fonts/DINPro/DINPro-CondensedBoldItalic.eot");
+  src: local("DIN Pro Condensed Bold Italic"), local("DINPro-CondensedBoldItalic"), url("/fonts/DINPro/DINPro-CondensedBoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/DINPro/DINPro-CondensedBoldItalic.woff") format("woff"), url("/fonts/DINPro/DINPro-CondensedBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'DIN-Pro-Cond';
+  src: url("/fonts/DINPro/DINPro-CondensedBlack.eot");
+  src: local("DIN Pro Condensed Black"), local("DINPro-CondensedBlack"), url("/fonts/DINPro/DINPro-CondensedBlack.eot?#iefix") format("embedded-opentype"), url("/fonts/DINPro/DINPro-CondensedBlack.woff") format("woff"), url("/fonts/DINPro/DINPro-CondensedBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF-Din';
+  src: url("/fonts/PFDin/subset-PFDinTextCondPro-Regular.eot");
+  src: url("/fonts/PFDin/subset-PFDinTextCondPro-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/PFDin/subset-PFDinTextCondPro-Regular.woff") format("woff"), url("/fonts/PFDin/subset-PFDinTextCondPro-Regular.ttf") format("truetype"), url("/fonts/PFDin/subset-PFDinTextCondPro-Regular.svg#PFDinTextCondPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* ====== fonts end ====== */
 /* ====== grid ====== */
 .container {
   position: relative;
@@ -234,19 +264,58 @@ input, select {
   .offset-col-half {
     margin-left: 52%; } }
 
+.f-right {
+  float: right; }
+
+.f-left {
+  float: left; }
+
 /* ====== grid end ====== */
 /* ====== button-links begin ====== */
 .logo {
   display: block;
   width: 149px;
-  height: 112px;
+  height: 152px;
   margin: 0 auto;
   background-image: url(/img/logo.png);
   background-position: 50% 50%;
   background-repeat: no-repeat; }
 
+.btn {
+  font-family: 'DIN-Pro-Cond';
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 16px;
+  padding: 11px;
+  text-decoration: none; }
+
+.btn_main-color {
+  color: #000;
+  background-image: url(/img/bg/btn-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.icon {
+  float: left;
+  margin-right: 8px; }
+
+.icon_timetable {
+  width: 25px;
+  float: left;
+  height: 23px;
+  margin-right: 8px;
+  background-image: url(/img/icons/icon-calendar.png); }
+
+.icon_location {
+  width: 10px;
+  float: left;
+  height: 14px;
+  margin-right: 8px;
+  background-image: url(/img/icons/icon-location.png); }
+
 /* ====== button-links end ====== */
-/* ====== header begin ====== */
+/*====== header begin ====== */
 #header {
   display: block;
   min-height: 152px;
@@ -257,26 +326,77 @@ input, select {
 
 /* ====== header end ====== */
 /* ====== info begin ====== */
-.info .info-links {
-  float: left;
-  /*elements*/
-  /*modificators*/
-  /*states*/ }
-  .info .info-links ul li {
-    list-style: none;
+.info {
+  margin-top: 50px; }
+  .info .info-links {
     float: left;
-    margin-right: 20px; }
-  .info .info-links a {
-    color: #fff;
-    text-decoration: none;
-    display: block; }
-
-.info .info-links {
-  /*elements*/
-  /*modificators*/
-  /*states*/ }
+    /*elements*/
+    /*modificators*/
+    /*states*/ }
+    .info .info-links ul li {
+      list-style: none;
+      float: left;
+      margin-right: 20px; }
+    .info .info-links a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      font-family: 'DIN-Pro-Cond';
+      font-weight: 900;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 20px;
+      text-transform: uppercase; }
+  .info .info-contacts {
+    float: right;
+    display: table;
+    /*elements*/
+    /*modificators*/
+    /*states*/ }
+    .info .info-contacts .info-contacts__location {
+      display: table-cell;
+      vertical-align: middle;
+      font-family: 'PF-Din';
+      font-weight: normal;
+      color: #f6c834;
+      font-size: 16px; }
+    .info .info-contacts .info-contacts__phone {
+      font-family: 'DIN-Pro-Cond';
+      font-weight: 900;
+      text-transform: uppercase;
+      font-style: normal;
+      color: #fff;
+      font-size: 24px; }
+      .info .info-contacts .info-contacts__phone .phone-code {
+        color: #b0a283; }
 
 /* ====== info end ====== */
+/* ====== menu begin ====== */
+.menu {
+  margin-top: 24px;
+  /*elements*/
+  /*modificators*/
+  /*states*/ }
+  .menu .main-menu li {
+    float: left;
+    margin-right: 34px; }
+  .menu .main-menu a {
+    font-family: 'DIN-Pro-Cond';
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #f6c834;
+    text-decoration: none;
+    font-size: 18px; }
+  .menu .main-menu_horizontal {
+    float: left;
+    line-height: 38px; }
+    .menu .main-menu_horizontal .btn {
+      float: right; }
+  .menu .main-menu_vertical {
+    float: left; }
+
+/* ====== menu end ======*/
 /* ====== hero-slider begin ====== */
 /* ====== hero-slider end ====== */
 /* ====== hero-text begin ====== */

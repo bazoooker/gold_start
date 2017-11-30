@@ -1,4 +1,4 @@
-/* ====== header begin ====== */
+/*====== header begin ====== */
 
 #header {
 	display: block;
@@ -14,32 +14,94 @@
 /* ====== info begin ====== */
 
 .info {
+	margin-top: 50px;
+
 	.info-links {
-		float: left;		
+		float: left;
+
 		/*elements*/
 		ul li {
 			list-style: none;
 			float: left;
 			margin-right: 20px;
 		}
+
 		a {
 			color: #fff;
 			text-decoration: none;
 			display: block;
+
+			@include font-900-italic;
+			font-size: 20px;
+			text-transform: uppercase;
 		}
+
 		/*modificators*/
 		/*states*/	
 	}
 
-	.info-links {		
+	.info-contacts {
+		float: right;
+		display: table;
 		/*elements*/
+		.info-contacts__location {
+			display: table-cell;
+    		vertical-align: middle;
+    		
+			@include text-font;
+			color: $main-color;	
+			font-size: 16px;					
+		}
+
+		.info-contacts__phone {
+			@include font-900-normal;
+			color: #fff;
+			font-size: 24px;
+			.phone-code {
+				color: $phone-color;
+			}
+		}
+
 		/*modificators*/
 		/*states*/	
 	}
 }
 
-	
-
-
-
 /* ====== info end ====== */
+
+/* ====== menu begin ====== */
+
+.menu {
+	margin-top: 24px;
+	// padding: 11px 0;
+	
+	.main-menu li {
+		float: left;
+		margin-right: 34px;
+	}
+
+	.main-menu a {
+		@include font-900-italic;
+		color: $main-color;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	/*elements*/
+
+	/*modificators*/
+	.main-menu_horizontal {
+		float: left;
+		line-height: 38px;
+
+		.btn {
+			float: right;
+		}
+	}
+
+	.main-menu_vertical {
+		float: left;
+	}
+	/*states*/	
+}
+
+/* ====== menu end ======*/
