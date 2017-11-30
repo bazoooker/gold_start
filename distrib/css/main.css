@@ -353,21 +353,20 @@ body {
 
 .icon {
   float: left;
-  margin-right: 8px; }
-
-.icon_timetable {
-  width: 25px;
-  float: left;
-  height: 23px;
   margin-right: 8px;
-  background-image: url(/img/icons/icon-calendar.png); }
+  background-image: url(/img/icons/sprite.png); }
+
+.icon_calendar {
+  background-position: -1px -27px;
+  width: 25px;
+  height: 23px; }
 
 .icon_location {
-  width: 10px;
-  float: left;
+  margin-top: 4px;
+  background-position: 0 0;
+  width: 11px;
   height: 14px;
-  margin-right: 8px;
-  background-image: url(/img/icons/icon-location.png); }
+  background-image: url(/img/icons/sprite.png); }
 
 .single-link {
   display: inline-block;
@@ -394,9 +393,7 @@ body {
 
 .info .info-links {
   float: left;
-  /*elements*/
-  /*modificators*/
-  /*states*/ }
+  /*elements*/ }
   .info .info-links ul li {
     list-style: none;
     float: left;
@@ -410,7 +407,13 @@ body {
     text-transform: uppercase;
     font-style: italic;
     font-size: 20px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    /*modificators*/
+    /*states*/ }
+    .info .info-links a:hover {
+      color: #f6c834; }
+  .info .info-links .info-link_timetable:hover .icon_calendar {
+    background-position: -34px -28px; }
 
 .info .info-links_vertical ul li {
   display: block;
@@ -429,6 +432,7 @@ body {
   .info .info-contacts .info-contacts__location {
     display: table-cell;
     vertical-align: middle;
+    padding-right: 10px;
     font-family: 'PF-Din';
     font-weight: normal;
     color: #f6c834;
@@ -538,7 +542,8 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(0, 0, 0, 0.5)));
+      background-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 70%);
       background-size: 100%; }
     .features .features__tile:after {
       position: absolute;

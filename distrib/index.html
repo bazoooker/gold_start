@@ -8,7 +8,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='css/main.css' />
+  <link rel='stylesheet' href='css/swiper.css' />
   <script src='js/script.js'></script>
+  <script src='js/swiper.min.js'></script>
 </head>
 
 <body class="body">
@@ -36,7 +38,7 @@
               <li>
               
               <a href="#" class="info-link_timetable">
-              <i class="icon icon_timetable"></i>расписание</a></li>
+              <i class="icon icon_calendar"></i>расписание</a></li>
               <li><a href="#" class="info-link_news">новости и акции</a></li>
             </ul>
           </div>
@@ -81,7 +83,33 @@
 
 <!-- ========== hero slider begin ========== -->
 
-<div class="hero-slider-holder">
+
+<!-- Slider main container -->
+<div id="slider" class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="/img/bg/hero-bg-gradient.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/bg/hero-bg-gradient.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/img/bg/hero-bg-gradient.jpg" alt="">
+        </div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
   <div class="container">
   <div class="hero-text">
     <p>Зона функционального тренинга</p>
@@ -92,7 +120,7 @@
     <button></button>
   </div>    
   </div>
-</div>
+
 
 <!-- ========== hero slider end ========== -->
 
@@ -264,6 +292,11 @@
 <!-- ========== footer end ========== -->
         
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+  
 </body>
 
 </html>

@@ -36,10 +36,19 @@
 			@include font-900-italic;
 			font-size: 20px;
 			text-transform: uppercase;
+
+			&:hover {
+			color: $main-color;
 		}
 
+		
+
 		/*modificators*/
-		/*states*/	
+		/*states*/
+		}
+		.info-link_timetable:hover .icon_calendar {
+			background-position: -34px -28px;
+		}	
 	}
 	.info-links_vertical ul li {
 		display: block;
@@ -54,14 +63,16 @@
 	.info-contacts {
 		float: right;
 		display: table;
+
 		/*elements*/
 		.info-contacts__location {
 			display: table-cell;
     		vertical-align: middle;
+    		padding-right: 10px;
     		
 			@include text-font;
 			color: $main-color;	
-			font-size: 16px;					
+			font-size: 16px;				
 		}
 
 		.info-contacts__phone {
@@ -76,6 +87,8 @@
 		/*modificators*/
 		/*states*/		
 	}
+
+
 	.info-contacts_vertical	{
 
 		.info-contacts__location,
@@ -87,6 +100,8 @@
 		}
 	}
 }
+
+
 .menu_header {
 	margin-top: 24px;
 }
@@ -102,12 +117,14 @@
 		margin-right: 34px;
 	}
 
-	.main-menu a {
-		@include font-900-italic;
-		color: $main-color;
-		text-decoration: none;
-		font-size: 18px;
-	}
+	.main-menu {
+		a {
+			@include font-900-italic;
+			color: $main-color;
+			text-decoration: none;
+			font-size: 18px;
+			}
+		}
 	/*elements*/
 
 	/*modificators*/
