@@ -1,21 +1,17 @@
-/* ====== button-links begin ====== */
-
 .logo {
 	display: block;
 	width: 149px;
 	height: 152px;
 	margin: 0 auto;
-
 	opacity: .9;
-
 	background-image: url(/img/logo.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-
 	&:hover {
 		opacity: 1;
 	}
 }
+
 
 .btn {
 	@include font-900-italic;
@@ -23,35 +19,31 @@
 	padding: 9px 15px;
 	text-decoration: none;
 	opacity: .9;
-	// border: 1px solid transparent;
-	
 	&:hover {
 		opacity: 1;
 	}	
 }
-	.btn_try {
-		font-size: 18px;
-		padding: 8px;
-
-		&:hover {
+.btn_try {
+	font-size: 18px;
+	padding: 8px;
+	&:hover {
 		opacity: 1;
 		background-size: 400%;
 		backgroun-position: left center;
 		color: #000;
 	}
-	}
+}
+.btn_main-color {
+	color: #000;
+	background-image: url(/img/bg/btn-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.btn_block {
+	display: inline-block;
+	margin-top: 30px;
+}
 
-	.btn_main-color {
-		color: #000;
-		background-image: url(/img/bg/btn-bg.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.btn_block {
-		display: inline-block;
-		margin-top: 30px;
-	}
 
 .icon {
 	float: left;
@@ -59,19 +51,20 @@
 	background-image: url(/img/icons/sprite.png);
 
 }
-	.icon_calendar {
-		background-position: -1px -27px ;
-		width: 25px;
-		height: 23px;
-	}
+.icon_calendar {
+	background-position: -1px -27px ;
+	width: 25px;
+	height: 23px;
+}
+.icon_location {
+	margin-top: 4px;
+	background-position: 0 0;
+	width: 11px;
+	height: 14px;
+	background-image: url(/img/icons/sprite.png);
+}
 
-	.icon_location {
-		margin-top: 4px;
-		background-position: 0 0;
-		width: 11px;
-		height: 14px;
-    	background-image: url(/img/icons/sprite.png);
-	}
+
 .single-link {
 	display: inline-block;
 	color: $main-color;
@@ -83,6 +76,11 @@
 		text-decoration: underline;
 	}
 }
-/* ====== button-links end ====== */
 
-
+a {
+	color: $main-color;
+	text-decoration: none;
+	&:hover {
+		color: #000;
+	}
+}

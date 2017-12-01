@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>title</title>
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel='stylesheet' href='css/swiper.css' />
   <link rel='stylesheet' href='css/main.css' />
   
   <script src='js/script.js'></script>  
+ 
 </head>
 
 <body class="body">
@@ -20,8 +23,62 @@
   
   <div class="wrap">
     
+  <!-- mobile menu -->
+
+   <div class="mobile-menu-bar">
+    <div class="container">
+      <button id="openMobileNav" style="width: 100px;">Menu</button>
+    </div>    
+  </div>
+
+  <div id="mobile-nav">
+
+
+        <a href="#" class="logo"></a>  
+
+
+      <div class="info info_footer">
+        <div class="info-links info-links_vertical">
+          <ul>
+              <li>              
+                <a href="#" class="info-link_timetable">
+                <i class="icon icon_calendar"></i>расписание</a></li>
+              <li><a href="#" class="info-link_news">новости и акции</a></li>
+            </ul>
+        </div>  
+      </div>
+
+      <div class="menu menu_footer">
+        <ul class="main-menu main-menu_vertical">
+          <li><a href="#">клуб</a></li>
+          <li><a href="#">фитнес</a></li>
+          <li><a href="#">spa</a></li>
+          <li><a href="#">клубные карты</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>  
+      </div>
+
+      <div class="info info_footer">
+        <div class="info-contacts info-contacts_vertical">       
+          <span class="info-contacts__location">
+            <i class="icon icon_location"></i>
+            г. Барнаул, Павловский тракт, 18В, ТРЦ "Арена"
+          </span>
+          <a class="info-contacts__phone">
+            <span class="phone-code">(3852)</span>
+            59 00 59
+          </a>
+        </div>
+
+        <a href="#" class="btn btn_main-color btn_block f-right">попробовать премиум-фитнес</a>  
+      </div>
+
+  </div>
+
+ 
   
   <!-- ========== header begin ========== -->
+
 
   <div id="header">
     <div class="container">
@@ -319,7 +376,7 @@
 
 <script src='js/swiper.min.js'></script>
 
-
+<!-- инициализируем свайпер -->
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'fade',
@@ -328,10 +385,7 @@
       prevEl: '.swiper-button-prev',
       },
     });    
-  </script>
-  
- 
- 
+  </script> 
 
 </body>
 
