@@ -624,3 +624,35 @@ body {
       bottom: -15px;
       background-image: linear-gradient(338deg, #fff 50%, #e7e7e7 50%);
       background-repeat: no-repeat; }
+
+.swiper-container {
+  width: 100%;
+  height: 630px; }
+
+.hero-text-holder {
+  position: relative;
+  height: 100%; }
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 25px;
+  position: absolute;
+  bottom: 4%;
+  right: 0;
+  width: 50%;
+  z-index: 2; }
+  .hero-text h2 {
+    color: #f6c834; }
+  .hero-text p {
+    color: white; }
+
+.hero-slider__controls {
+  margin-top: -100px;
+  z-index: 5; }
+
+.slider-controls {
+  position: absolute; }
+
+.aswiper-button-prev,
+.aswiper-button-next {
+  color: #f6c834; }

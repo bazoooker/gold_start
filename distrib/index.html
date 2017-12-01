@@ -7,10 +7,10 @@
   <title>title</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' href='css/main.css' />
   <link rel='stylesheet' href='css/swiper.css' />
-  <script src='js/script.js'></script>
-  <script src='js/swiper.min.js'></script>
+  <link rel='stylesheet' href='css/main.css' />
+  
+  <script src='js/script.js'></script>  
 </head>
 
 <body class="body">
@@ -89,37 +89,60 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="/img/bg/hero-bg-gradient.jpg" alt="">
+        <div class="swiper-slide" style="background-image: url(/img/bg/hero-bg-gradient.jpg);">
+          <div class="container hero-text-holder">
+            <div class="hero-text">
+              <h2>Зона функционального тренинга</h2>
+              <p>Зона функционального тренинга с новой силовой станцией NAUTILUS обеспечивает разнообразие тренировок</p>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
+              
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="/img/bg/hero-bg-gradient.jpg" alt="">
+
+        <div class="swiper-slide" style="background-image: url(/img/bg/hero-bg.jpg);">
+          <div class="container hero-text-holder">
+            <div class="hero-text">
+              <h2>Кардио-зона</h2>
+              <p>Кардио-зона с новой силовой станцией NAUTILUS обеспечивает разнообразие тренировок</p>
+              <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="/img/bg/hero-bg-gradient.jpg" alt="">
-        </div>
-        ...
+
+        <div class="swiper-slide" style="background-image: url(/img/bg/hero-bg-gradient.jpg);">
+          <div class="container hero-text-holder">
+            <div class="hero-text">
+              <h2>Профессиональные тренеры</h2>
+              <p>Профессиональные тренеры с новой силовой станцией NAUTILUS обеспечивает разнообразие тренировок</p>
+              <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>  
+            </div>
+          </div>
+        </div>        
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+
     
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+
 </div>
-  <div class="container">
-  <div class="hero-text">
-    <p>Зона функционального тренинга</p>
-    <p>Зона функционального тренинга с новой силовой станцией NAUTILUS обеспечивает разнообразие тренировок</p>
-  </div>
+
+
+
+    
+
+<!--   <div class="container">
+  
   <div class="hero-text__controls">
     <button></button>
     <button></button>
   </div>    
-  </div>
+  </div> -->
 
 
 <!-- ========== hero slider end ========== -->
@@ -293,10 +316,23 @@
         
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+
+<script src='js/swiper.min.js'></script>
+
+
   <script>
-    var swiper = new Swiper('.swiper-container');
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'fade',
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+    });    
   </script>
   
+ 
+ 
+
 </body>
 
 </html>
