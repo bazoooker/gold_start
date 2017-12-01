@@ -4,6 +4,8 @@
 	box-sizing: borer-box;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 4px;
+	background-color: #fff;
 
 	.section__bg {
 		position: absolute;
@@ -33,16 +35,17 @@
 			height: 100%;
 			background-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 70%);
 			background-size: 100%;
+			transition: all 200ms;
 		}
 		&:after {
-		position: absolute;
-		bottom: 0;
-		left: -50%;
-		height: 260px;
-		background-color: #e7e7e7;
-		position: absolute;
-		width: 2500px;
-		z-index: -1;
+			position: absolute;
+			bottom: 0;
+			left: -50%;
+			height: 260px;
+			background-color: #e7e7e7;
+			position: absolute;
+			width: 2500px;
+			z-index: -1;
 		}
 		& span {
 			position: absolute;
@@ -51,6 +54,10 @@
 			color: $main-color;
 			@include font-700-italic;
 			font-size: 24px;
+		}
+		&:hover:before {
+			// background-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.6) 70%);
+			background-color: rgba(0,0,0,.4)
 		}
 	}
 
@@ -71,4 +78,4 @@
 
 
 
-/* ====== feature-section end ====== */
+/* ====== feature-section end ======*/

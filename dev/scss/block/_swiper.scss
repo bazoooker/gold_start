@@ -10,16 +10,12 @@
 
 .hero-text {
 	background-color: rgba(0,0,0,.7);
-	padding: 40px 25px;
+	padding: 40px 25px 65px 25px;
 	position: absolute;
 	bottom: 4%;
 	right: 0;
 	width: 50%;
 	z-index: 2;
-	// height: 40%;
-	// width: 50%;
-	// float: right;
-	// margin-top:35%;
 	& h2 {
 		color: $main-color;
 	}

@@ -115,14 +115,31 @@
 	.main-menu li {
 		float: left;
 		margin-right: 34px;
+		list-style: none;
 	}
 
 	.main-menu {
 		a {
+			position: relative;			
 			@include font-900-italic;
 			color: $main-color;
 			text-decoration: none;
 			font-size: 18px;
+
+			&:after {
+				display: block;
+				content: "";
+				position: absolute;
+				height: 2px;
+				width: 0%;
+				bottom: -3px;
+				background-color: $main-color;
+				transition: width 100ms;
+			}
+
+			&:hover:after {
+				width: 100%;
+			}
 			}
 		}
 	/*elements*/
