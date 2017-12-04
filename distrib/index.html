@@ -25,13 +25,40 @@
     
   <!-- mobile menu -->
 
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay_hidden"></div>
+
    <div class="mobile-menu-bar">
     <div class="container">
-      <button id="openMobileNav" style="width: 100px;">Menu</button>
-    </div>    
+    <a href="#" class="logo"></a>
+
+    <div id="btnOpenMobileMenu" class="hamburger-menu">
+      <span class="hamburger-icon">
+        <i class="hamburger-bar"></i>
+        <i class="hamburger-bar"></i>
+        <i class="hamburger-bar"></i>
+      </span>
+      меню
+    </div>
+
+      <!-- <button id="btnOpenMobileMenu" style="width: 100px;">Menu</button> -->
+      <div class="info">
+        <div class="info-contacts info-contacts_horizontal">        
+          <span class="info-contacts__location">
+            <i class="icon icon_location"></i>
+            г. Барнаул, Павловский тракт, 18В, ТРЦ "Арена"
+          </span>
+          <a class="info-contacts__phone">
+            <span class="phone-code">(3852)</span>
+            59 00 59
+          </a>
+        </div>
+      </div> 
+      </div>
+         
   </div>
 
-  <div id="mobile-nav">
+  <div id="mobile-menu" class="mobile-menu_hidden">
+      <i id="btnCloseMobileMenu"></i>
 
 
         <a href="#" class="logo"></a>  
@@ -91,7 +118,7 @@
         <div class="info info_header row"> <!-- верхняя полоска хедера -->
 
           <div class="info-links info-links_horizontal">
-            <ul>
+            <ul class="row">
               <li>
               
               <a href="#" class="info-link_timetable">
@@ -386,6 +413,28 @@
       },
     });    
   </script> 
+
+<script>
+  // открытие
+  $("#btnOpenMobileMenu").click(function(){
+    $("#mobile-menu").removeClass("mobile-menu_hidden");
+    $("#mobile-menu-overlay").removeClass("mobile-menu-overlay_hidden");
+  });
+
+  // закрытие
+  $("#btnCloseMobileMenu").click(function(){
+    $("#mobile-menu").addClass("mobile-menu_hidden");
+    $("#mobile-menu-overlay").addClass("mobile-menu-overlay_hidden");
+  });
+
+ $("#mobile-menu-overlay").click(function(){
+    $("#mobile-menu").addClass("mobile-menu_hidden");
+    $("#mobile-menu-overlay").addClass("mobile-menu-overlay_hidden");
+
+ });
+
+
+</script>
 
 </body>
 
