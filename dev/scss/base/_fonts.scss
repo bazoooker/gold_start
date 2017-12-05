@@ -1,4 +1,4 @@
-/* ====== fonts begin ====== */
+//fonts begin
 
 @font-face {
 	font-family: 'DIN-Pro-Cond';
@@ -33,17 +33,28 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'PF-Din';
+	src: url('/fonts/PFDin/pfdintextcondpro-regular-webfont.eot');
+	src: url('/fonts/PFDin/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/PFDin/pfdintextcondpro-regular-webfont.woff') format('woff'),
+		url('/fonts/PFDin/pfdintextcondpro-regular-webfont.woff2') format('woff'),
+		url('/fonts/PFDin/pfdintextcondpro-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
-    font-family: 'PF-Din';
-    src: url('/fonts/PFDin/subset-PFDinTextCondPro-Regular.eot');
-    src: url('/fonts/PFDin/subset-PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/PFDin/subset-PFDinTextCondPro-Regular.woff') format('woff'),
-        url('/fonts/PFDin/subset-PFDinTextCondPro-Regular.ttf') format('truetype'),
-        url('/fonts/PFDin/subset-PFDinTextCondPro-Regular.svg#PFDinTextCondPro-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'PF-Din';
+	src: url('/fonts/PFDin/pfdintextcondpro-bold-webfont.eot');
+	src: url('/fonts/PFDin/pfdintextcondpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/PFDin/pfdintextcondpro-bold-webfont.woff') format('woff'),
+		url('/fonts/PFDin/pfdintextcondpro-bold-webfont.woff2') format('woff'),
+		url('/fonts/PFDin/pfdintextcondpro-bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
+
 
 body, p {
 	@include text-font;
@@ -252,4 +263,4 @@ h6 {font-size: 17px; margin-bottom: 30px;}
 
 
 
-/* ====== fonts end ====== */
+//fonts end
