@@ -100,7 +100,12 @@
   .offset-col-third     { margin-left: 34.6666666667%; }
   .offset-col-2-thirds  { margin-left: 69.3333333333%; }
   .offset-col-half      { margin-left: 52%; }
-
+@media screen and (max-width: 480px) {
+  .col {
+    margin-left: 0; 
+    margin-bottom: 20px; 
+  }  
+}
 
 .f-right {
   float: right;

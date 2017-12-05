@@ -1,6 +1,6 @@
 .features {
 	position: relative;
-	box-sizing: borer-box;
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 4px;
@@ -62,10 +62,25 @@
 	.features__tile_span6 {
 		width: 49%;
 		flex-grow: 2;
-
+		@media screen and (max-width: 960px) {
+			width: 48%;
+			flex-grow: 1;
+		}
+		@media screen and (max-width: 552px) {
+			width: 100%;
+			flex-grow: 1;
+		}
 	}
 	.features__tile_span3 {
 		width: 24%;
 		flex-grow: 1;
+		@media screen and (max-width: 960px) {
+			width: 48%;
+			flex-grow: 1;
+		}
+		@media screen and (max-width: 552px) {
+			width: 100%;
+			flex-grow: 1;
+		}
 	}	
 }

@@ -34,7 +34,7 @@ gulp.task('watch', ['browser-sync', 'sass'], function() {
 gulp.task('default', () =>
 gulp.src('src/app.css')
 .pipe(autoprefixer({
-browsers: ['last 2 versions'],
+browsers: ['last 6 versions'],
 cascade: false
 }))
 .pipe(gulp.dest('dist'))
