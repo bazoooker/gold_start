@@ -7,7 +7,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src('dev/scss/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['last 6 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('distrib/css')) // Выгружаем результата в папку distrib/css
@@ -25,7 +25,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('dev/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами
-    gulp.watch('distrib/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch('distrib/**/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     // Наблюдение за другими типами файлов
 });
 
