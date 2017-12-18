@@ -825,6 +825,51 @@ a {
     #footer .btn {
       float: left; } }
 
+.page-title-holder {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 250px; }
+  .page-title-holder:after {
+    content: "";
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: -o-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000000), color-stop(15, #000000), color-stop(50, transparent), color-stop(85, #CBA860), color-stop(100, #CBA860));
+    background-image: -webkit-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(15%, #000000), color-stop(50%, transparent), color-stop(85%, #CBA860), to(#CBA860));
+    background-image: linear-gradient(to right, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  .page-title-holder .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    min-height: 250px; }
+  .page-title-holder h1 {
+    color: #f6c834;
+    font-size: 60px;
+    z-index: 2;
+    line-height: 65px; }
+    @media screen and (max-width: 480px) {
+      .page-title-holder h1 {
+        font-size: 40px;
+        line-height: 45px; } }
+
 .cards .cards__one-card {
   position: relative; }
   .cards .cards__one-card:after {
@@ -1052,4 +1097,20 @@ a {
   color: #f6c834; }
 
 .swiper-slide {
+  position: relative;
   background-size: cover; }
+  .swiper-slide:after {
+    content: "";
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: -o-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000000), color-stop(15, #000000), color-stop(50, transparent), color-stop(85, #CBA860), color-stop(100, #CBA860));
+    background-image: -webkit-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(15%, #000000), color-stop(50%, transparent), color-stop(85%, #CBA860), to(#CBA860));
+    background-image: linear-gradient(to right, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1; }

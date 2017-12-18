@@ -24,3 +24,12 @@
 	font-family: 'PF-Din';
 	font-weight: normal;	
 }
+
+@mixin gradient_gray-yellow {
+	background-image: -ms-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+	background-image: -moz-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+	background-image: -o-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000000), color-stop(15, #000000), color-stop(50, transparent), color-stop(85, #CBA860), color-stop(100, #CBA860));
+	background-image: -webkit-linear-gradient(left, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+	background-image: linear-gradient(to right, #000000 0%, #000000 15%, transparent 50%, #CBA860 85%, #CBA860 100%);
+}
