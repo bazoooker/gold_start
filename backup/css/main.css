@@ -655,13 +655,6 @@ a {
     list-style: none;
     float: left;
     margin-right: 20px; }
-    .info .info-links ul li:first-child {
-      background-image: url(../img/icons/icon-calendar.png);
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 33px; }
-      .info .info-links ul li:first-child:hover {
-        background-image: url(../img/icons/icon-calendar_active.png); }
   .info .info-links a {
     color: #fff;
     text-decoration: none;
@@ -677,6 +670,8 @@ a {
     @media screen and (min-width: 961px) and (max-width: 1050px) {
       .info .info-links a {
         font-size: 16px; } }
+  .info .info-links .info-link_timetable:hover .icon_calendar {
+    background-position: -34px -28px; }
 
 .info .info-links_vertical ul li {
   display: block;

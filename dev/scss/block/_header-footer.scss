@@ -21,6 +21,15 @@
 				list-style: none;
 				float: left;
 				margin-right: 20px;
+				&:first-child {
+					background-image: url(../img/icons/icon-calendar.png);
+					background-repeat: no-repeat;
+					background-position: left center;
+					padding-left: 33px;
+					&:hover {
+						background-image: url(../img/icons/icon-calendar_active.png);
+					}
+				}
 			}
 		}
 
@@ -40,9 +49,18 @@
 				}
 			}
 		}
-		.info-link_timetable:hover .icon_calendar {
-			background-position: -34px -28px;
-		}	
+		// .info-link_timetable:hover .icon_calendar {
+		// 	background-position: -34px -28px;
+		// }	
+		// .info-link_timetable {
+		// 	background-image: url(../img/icons/icon-calendar.png);
+		// 	background-repeat: no-repeat;
+		// 	background-position: left center;
+		// 	padding-left: 30px;
+		// 	&:hover {
+		// 		background-image: url(../img/icons/icon-calendar_active.png);
+		// 	}
+		// }
 	}
 	.info-links_vertical {
 		ul {
