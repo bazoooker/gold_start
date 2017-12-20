@@ -15,8 +15,8 @@
   <link rel='stylesheet' href='css/swiper.css' />
   <link rel='stylesheet' href='css/main.css' />
   
-  <!-- scripts -->
-  <script src='js/script.js'></script>  
+   
+   
  
 </head>
 
@@ -49,7 +49,7 @@
               <i class="icon icon_location"></i>
               г. Барнаул, Павловский тракт, 18В, ТРЦ "Арена"
             </span>
-            <a class="info-contacts__phone">
+            <a class="info-contacts__phone" href="tel:+7(3852)590059">
               <span class="phone-code">(3852)</span>
               59 00 59
             </a>
@@ -95,7 +95,7 @@
             </a>
           </div>
 
-          <a href="#" class="btn btn_main-color btn_block f-right">попробовать премиум-фитнес</a>  
+          <a href="#" class="btn btn_main-color btn_block f-right callback-link">попробовать премиум-фитнес</a>  
         </div>
 
     </div>
@@ -144,7 +144,7 @@
               <li><a href="#">контакты</a></li>
             </ul>
             
-            <a href="#" class="btn btn_main-color btn_try f-right">попробовать премиум-фитнес</a>
+            <a href="#" class="btn btn_main-color btn_try f-right callback-link">попробовать премиум-фитнес</a>
               
           </div> <!-- нижняя полоска хедера конец --> 
         </div>             
@@ -355,12 +355,37 @@
               59 00 59
             </a>
           </div>
-          <a href="#" class="btn btn_main-color btn_block f-right">попробовать премиум-фитнес</a>  
+          <a href="#" class="btn btn_main-color btn_block f-right callback-link">попробовать премиум-фитнес</a>  
         </div>
 
       </div>
     </div>
   </div>
+
+<!-- callback -->
+  <div id="overlay" style="display: none;"></div>
+      <div id="callback-window" class="modal" style="display: none;"> <a class="modal-close" href="#"></a>
+        <div class="spinner"></div>
+        <div class="modal-content">
+          <h2>Обратный звонок</h2>
+          <div class="">
+          <form action="" method="post" data-file="callback">
+            <input type="text" name="name" placeholder="Ваше имя *">
+            <input type="text" name="phone" placeholder="Номер телефона *">
+            <input type="text" name="time" placeholder="Удобное время для звонка">
+            <textarea name="text" placeholder="Здесь вы можете оставить комментарий"></textarea>
+            <div class="modal-controls">
+              <button type="submit" class="bigbutt btn btn_primary-color">Отправить</button>
+            </div>
+            <div class="modal-errors">
+            </div>
+            <div class="modal-result">
+            </div>
+          </form>
+          </div>
+        </div>
+        <div class="modal-content-copy"></div>
+      </div>
 
 </div>
 
@@ -368,8 +393,10 @@
         
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
+<!-- scripts -->
 <script src='js/swiper.min.js'></script>
+<script src='js/script.js'></script> 
+<script src='js/jquery.form.min.js'></script> 
 
 <!-- инициализируем свайпер -->
   <script>
