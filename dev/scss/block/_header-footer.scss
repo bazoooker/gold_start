@@ -200,6 +200,7 @@
 #footer {
 	min-height: 276px;	
 	background-image: url(/img/bg/bg-footer.png);
+	background-repeat: repeat-y;
 	background-size: cover;
 	padding-bottom: 30px;
 	@media screen and (max-width: 350px) {

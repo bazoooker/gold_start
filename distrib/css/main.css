@@ -186,7 +186,7 @@ html, body {
 body {
   background-image: url(/img/bg/bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: 100% 50%; }
 
 .container {
@@ -780,6 +780,7 @@ a {
 #footer {
   min-height: 276px;
   background-image: url(/img/bg/bg-footer.png);
+  background-repeat: repeat-y;
   background-size: cover;
   padding-bottom: 30px; }
   @media screen and (max-width: 350px) {
