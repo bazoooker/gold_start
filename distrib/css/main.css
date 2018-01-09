@@ -800,6 +800,23 @@ a {
   .menu .main-menu__dropdown li {
     margin-right: 24px; }
 
+.menu .main-menu__dropdown_mobile {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-left: 20px;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms; }
+  .menu .main-menu__dropdown_mobile.active {
+    display: block;
+    max-height: 500px; }
+  .menu .main-menu__dropdown_mobile li {
+    padding-bottom: 6px; }
+  .menu .main-menu__dropdown_mobile li a {
+    font-size: 15px; }
+
 .menu .main-menu_horizontal {
   display: inline-block;
   line-height: 38px; }
@@ -807,6 +824,7 @@ a {
     float: right; }
 
 .menu .main-menu_vertical li {
+  position: relative;
   display: block;
   float: none; }
 

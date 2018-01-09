@@ -219,6 +219,35 @@
 		}
 	    
 	}
+
+	.main-menu__dropdown_mobile {
+		// position: absolute;
+		// overflow:hidden;
+	    // max-height: 0px;
+	    // top: 0px;
+	    // min-height: 180px;
+	    // max-height: 0;
+	    // ovarflow: hidden;	    
+	    display: block;
+	    max-height: 0;
+	    overflow: hidden;
+	    margin-top: 10px;
+	    padding-left: 20px;
+	    transition: 400ms;
+	    &.active {
+	    	// max-height: auto;
+	    	display: block;
+	    	max-height: 500px;
+	    }
+	    li {
+	    	padding-bottom: 6px;
+	    }
+
+	    li a {
+	    	font-size: 15px;
+	    }
+	}
+
 	.main-menu_horizontal {
 		// float: left;
 		display: inline-block;
@@ -229,6 +258,7 @@
 	}
 
 	.main-menu_vertical li {
+		position: relative;
 		display: block;
 		float: none;
 	}

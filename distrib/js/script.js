@@ -60,3 +60,20 @@ $(".modal form").on('submit', function(e){
         });
         return false;
     });
+
+
+// аккордеоны мобильного меню
+
+var mobMenuLinks = document.querySelectorAll("#mobile-menu .main-menu li");
+
+$(document).ready(function() {
+    for (var i = 0; i < mobMenuLinks.length; i++) {
+        mobMenuLinks[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            this.querySelector(".main-menu__dropdown_mobile").classList.toggle("active");
+        })
+    };
+
+
+})
+
