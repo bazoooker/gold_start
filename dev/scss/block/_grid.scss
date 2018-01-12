@@ -146,3 +146,17 @@ body {
   color: gray;
 }
 
+.clear {
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    display: block;
+    clear: both;
+  }
+}
