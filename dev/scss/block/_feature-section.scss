@@ -89,5 +89,13 @@
 			width: 100%;
 			flex-grow: 1;
 		}
-	}	
+	}
+	.features__tile_no-overlay {
+		&:before {
+			display: none !important;
+		}
+		&:after {
+			display: none !important;
+		}
+	}
 }

@@ -68,8 +68,15 @@ h1 {font-size: 30px; margin: 20px 0;}
 h2 {font-size: 30px; margin-bottom: 40px; line-height: 34px;}
 h3 {font-size: 24px;}
 h4 {font-size: 21px;}
-h5 {font-size: 19px;}
+h5 {font-size: 19px; margin-bottom: 10px;}
 h6 {font-size: 17px; margin-bottom: 30px;}
+
+h2.with-bg-icon {
+	background-repeat: no-repeat; 
+	background-size: contain;
+	background-position: left center; 
+	padding-left: 50px;
+}
 
 
 // @font-face {

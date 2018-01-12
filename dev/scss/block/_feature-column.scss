@@ -42,11 +42,12 @@
 		}
 		& span {
 			position: absolute;
-			top: 17%;
+			top: 35px;
 			left: 20px;
 			color: $main-color;
 			@include font-700-italic;
 			font-size: 24px;
+			padding-right: 10px;
 		}
 		&:hover:before {			
 			background-color: rgba(0,0,0,.4)

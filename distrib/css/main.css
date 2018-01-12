@@ -151,11 +151,18 @@ h4 {
   font-size: 21px; }
 
 h5 {
-  font-size: 19px; }
+  font-size: 19px;
+  margin-bottom: 10px; }
 
 h6 {
   font-size: 17px;
   margin-bottom: 30px; }
+
+h2.with-bg-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  padding-left: 50px; }
 
 /*====== grid ====== */
 html, body {
@@ -397,6 +404,11 @@ body {
 
 .full-width {
   width: 100%; }
+
+.small {
+  font-style: italic;
+  font-size: 14px;
+  color: gray; }
 
 #mobile-menu-overlay {
   position: fixed;
@@ -829,7 +841,7 @@ a {
   float: none; }
 
 #footer {
-  min-height: 276px;
+  height: auto;
   background-image: url(/img/bg/bg-footer.png);
   background-repeat: repeat-y;
   background-size: cover;
@@ -1052,6 +1064,10 @@ a {
         -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
         flex-grow: 1; } }
+  .features .container .features__tile_no-overlay:before {
+    display: none !important; }
+  .features .container .features__tile_no-overlay:after {
+    display: none !important; }
 
 .feature-block {
   display: -webkit-box;
@@ -1123,14 +1139,15 @@ a {
     z-index: -1; }
   .feature-block__img span {
     position: absolute;
-    top: 17%;
+    top: 35px;
     left: 20px;
     color: #f6c834;
     font-family: 'DIN-Pro-Cond';
     font-weight: bold;
     text-transform: uppercase;
     font-style: italic;
-    font-size: 24px; }
+    font-size: 24px;
+    padding-right: 10px; }
   .feature-block__img:hover:before {
     background-color: rgba(0, 0, 0, 0.4); }
   @media screen and (max-width: 552px) {
@@ -1460,6 +1477,9 @@ table {
   width: 100%;
   height: 630px; }
 
+.thermal-complex {
+  margin: 61px 0; }
+
 .hero-text-holder {
   position: relative;
   height: 100%; }
@@ -1482,6 +1502,16 @@ table {
     .hero-text {
       width: 100%; } }
 
+.hero-text_center {
+  right: 0;
+  width: 25%;
+  text-align: center; }
+  @media screen and (max-width: 667px) {
+    .hero-text_center {
+      width: 100%;
+      right: 0;
+      bottom: 0; } }
+
 .hero-slider__controls {
   margin-top: -100px;
   z-index: 5; }
@@ -1495,7 +1525,8 @@ table {
 
 .swiper-slide {
   position: relative;
-  background-size: cover; }
+  background-size: cover;
+  background-position: top center; }
   .swiper-slide:after {
     content: "";
     opacity: .4;
@@ -1701,3 +1732,16 @@ table {
 
 .modal-controls__btn:focus {
   outline: none; }
+
+.fitness-list li {
+  padding: 20px 20px 20px 60px;
+  background-size: 50px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  list-style: none;
+  opacity: .8;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  .fitness-list li:hover {
+    opacity: 1; }

@@ -265,13 +265,15 @@
 }
 
 #footer {
-	min-height: 276px;	
+	// min-height: 276px;	
+	height: auto;
 	background-image: url(/img/bg/bg-footer.png);
 	background-repeat: repeat-y;
 	background-size: cover;
 	padding-bottom: 30px;
 	@media screen and (max-width: 350px) {
 			padding-left:15px;
+			// min-height: 545px;
 		}
 	.info-contacts_vertical {
 		.info-contacts__location {
