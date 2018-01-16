@@ -1,36 +1,24 @@
 .modal {background: #FFF; border: 0; z-index: 999; position: fixed; display: none; top:100px;left:50%;border-radius: .4rem;}
 .modal .modal-content {
 	padding: 20px;
-	// box-shadow: 0 2px 15px 3px;
-	// border-radius: 5px;
-	// border: 1px solid #f6c834;
-	// background-image: url(/img/bg/bg-modal.png);
-	// background-size: cover;
-	// background-position: bottom center;
+	
 	h2 {
-		// color: $main-color;
 		color: #000;
 	}
 	input[type="text"],
 	textarea {
 		@include text-font;
-		// border-left: 5px solid #fff;
-		// border: 1px solid $main-color;
 		background-color: #eaeaea;
+		font-size: 16px;
 	}
 	input[type="text"]:hover,
 	textarea:hover {
-		// background-color: #eaeaea;
-		// background-color: #FFFFCC;
 		border: 1px solid $main-color;
 	}
 	input[type="text"]:focus,
 	textarea:focus {
-		// background-color: $main-color;
 		outline: none;
-		// background-color: #FFFFCC;
 		background-color: #fff;
-
 		border-left: 5px solid $main-color;
 	}
 }

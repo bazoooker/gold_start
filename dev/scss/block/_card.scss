@@ -1,12 +1,13 @@
 .card {
-	position: relative;
-	width: 50%;
-	padding: 35px;
-	background-color: #f0f0f0;	
-	border: 2px solid #fff;
-	overflow: hidden;	
-	transition: 300ms;
-	box-sizing: border-box;
+	    position: relative;
+    	width: 48%;
+    	padding: 35px;
+    	background-color: #f0f0f0;    
+    	overflow: hidden;    	
+    	transition: 300ms;    	
+    	box-sizing: border-box;
+    	margin: 5px;
+    	flex-grow: 1;
 		@media screen and (max-width: 760px) {
 			width: 100%;
 		}
@@ -41,7 +42,8 @@
 			    left: -9px;
 			    top: 0;
 			    border-radius: 50%;
-			    background-color: lightgray;			    
+			    // background-color: lightgray;			    
+			    background-color: $main-color;			    
 			    transform: rotate(45deg);
 			    transition: 300ms;
 			}
@@ -57,7 +59,7 @@
 	    padding: 20px 25px;
 	    background-color: #262626;
 	    color: #fff;
-	    opacity:.8;
+	    opacity:1;
 	    transition: 300ms;
 	    @media screen and (max-width: 960px) {
 			font-size: 23px;
@@ -93,16 +95,21 @@
     text-align: center;
     padding: 5px;
     line-height: 64px;
-	background-color: lightgray;
+	// background-color: lightgray;
+	background-color: $main-color;
 	transition: 300ms;
 }
 
 .card__card-img {
-	max-width: 100%;
+	max-width: 192px;
 	float: left;
-	filter: grayscale(100%);
-	opacity: .4;
+	filter: grayscale(50%);
+	opacity: .7;
 	transition: 300ms;
+	@media screen and (max-width: 959px) {
+		filter: none;
+		opacity: 1;
+	}
 }
 .card__lead {
 		position: relative;
@@ -112,7 +119,7 @@
 			content: "";
 		    position: absolute;
 		    width: 2px;
-		    height: 0;
+		    height: 100%;
 		    left: 0;
 		    top: 0;
 		    background-color: #262626;
@@ -128,26 +135,26 @@
 // states
 .card:hover {	
 
-	.card__training-time {
-		background-color: $main-color;
-	}
+	// .card__training-time {
+	// 	background-color: $main-color;
+	// }
 		
-	ul {			
-		li {					
-			&:before {				
-			    background-color: $main-color;			    
-			}
-		}
-	}
+	// ul {			
+	// 	li {					
+	// 		&:before {				
+	// 		    background-color: $main-color;			    
+	// 		}
+	// 	}
+	// }
 
-	h2 {opacity: 1}
+	// h2 {opacity: 1}
 
-	.card__lead {	
+	// .card__lead {	
 
-		&:after {			
-		    height: 100%;		    
-		}
-	}
+	// 	&:after {			
+	// 	    height: 100%;		    
+	// 	}
+	// }
 
 	.card-price	img,
 	.card__card-img  {
@@ -155,13 +162,13 @@
 		opacity: 1;
 	}
 
-	.card-price {		
-	    background-color: #262626;
-	    opacity: 1;	    
-	    .card-price__price {	    	
-	    	color: $main-color;		    	
-	    }		
-	}
+	// .card-price {		
+	//     background-color: #262626;
+	//     opacity: 1;	    
+	//     .card-price__price {	    	
+	//     	color: $main-color;		    	
+	//     }		
+	// }
 
 	.card-price_accent {	
 		&:after {		   

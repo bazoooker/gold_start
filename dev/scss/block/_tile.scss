@@ -1,0 +1,9 @@
+.message {
+	margin-bottom: 5px;
+	.tile-6{
+		box-sizing: border-box;
+		@media screen and (max-width: 960px) {
+			width: 100%;			
+		}
+	}
+}

@@ -48,15 +48,18 @@
 			@include font-700-italic;
 			font-size: 24px;
 			padding-right: 10px;
+			line-height: 27px;
 		}
 		&:hover:before {			
 			background-color: rgba(0,0,0,.4)
 		}
+
 		@media screen and (max-width: 552px) {
 			width: 100%;
 			flex-grow: 1;
 		}
 	}
+
 	.feature-block__text {
 		width: 49%;
 		padding: 15px;
@@ -75,6 +78,14 @@
 		}
 	}
 	// modificators
+	.feature-block__img_no-overlay {
+			&:before {
+				display: none !important;
+			}
+			&:after {
+				display: none !important;
+			}
+		}
 	.feature-block_responsive-reversed {
 		@media screen and (max-width: 552px) {
 			flex-direction: column-reverse;
@@ -154,12 +165,12 @@
 			}
 			& span {
 				position: absolute;
-				top: 17%;
+				top: 35px;
 				left: 20px;
 				color: $main-color;
 				@include font-700-italic;
 				font-size: 24px;
-				line-height: 29px;
+				line-height: 27px;
 			}
 			&:hover:before {			
 				background-color: rgba(0,0,0,.4)

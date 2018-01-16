@@ -4,17 +4,17 @@
     padding: 20px 0;
     background-color: #262626;
     text-align: center;
-    opacity: .8;
+    opacity: 1;
     @media screen and (max-width: 960px) {
 		width: 100%;
 		border-bottom: 2px solid #fff;
 	}  
 		
-	img {
-		filter: grayscale(100%);
-		opacity: .4;
-		transition: 300ms;		
-	}	
+	// img {
+	// 	filter: grayscale(20%);
+	// 	opacity: .7;
+	// 	transition: 300ms;		
+	// }	
 }
 
 	// elements
@@ -23,7 +23,7 @@
 	    }
     .card-price__price {
     	position: relative;
-    	color: #fff;
+    	color: $main-color;
     	font-family: 'DIN-Pro-Cond', sans-serif;
     	font-style: italic;
     	font-size: 28px;

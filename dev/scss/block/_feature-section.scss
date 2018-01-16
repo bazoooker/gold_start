@@ -12,13 +12,14 @@
 		z-index: -1;
 	}
 }
+.features .container {padding-bottom: 3px}
 
-.features .container{
+.features,
+.features .container {
 
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 4px;
 	background-color: #fff;
 	
 
